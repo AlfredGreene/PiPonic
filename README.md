@@ -1,4 +1,4 @@
-# PiPonic
+# PiPonic (WIP)
 
 Garden monitoring system using a Raspberry Pi and Arduino
 
