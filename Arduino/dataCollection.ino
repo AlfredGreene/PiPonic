@@ -1,7 +1,8 @@
 #include <SPI.h>
 #include <SD.h>
-//#include <Servo.h>
 
+//Servo Motor for watering not yet supported fully
+//#include <Servo.h>
 //Servo myservo;
 
 int device = 1;
@@ -49,8 +50,10 @@ void readLight(){
 }
 
 void sendData(){
+  //Used for testing the validity of the readings
   //sprintf(data, "%i\t%i\t%i", smreading, tempreading, lightreading);
   //Serial.println(data);
+  
   Serial.print(smreading);
   Serial.print("\t");
   Serial.print(tempreading);
@@ -59,6 +62,7 @@ void sendData(){
   Serial.println("");
 }
 
+//Servo Function
 //void moveServo(){
 //  for(pos = 0; pos < 180; pos +=1){
 //    myservo.write(pos);
